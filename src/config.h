@@ -2,6 +2,8 @@
 
 #include <Arduino.h>
 
+#define FW_VERSION "1.1"
+
 // NodeMCU v3 (ESP-12E) + RS232-TTL:
 //   D1 (GPIO5)   <- TXD конвертера (TTL TX инвертора)
 //   D2 (GPIO4)   -> RXD конвертера (TTL RX инвертора)

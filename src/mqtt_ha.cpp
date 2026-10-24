@@ -70,6 +70,7 @@ static void publishSensors(const HaSensor *sensors, size_t count) {
     dev["name"] = settings.device_name;
     dev["manufacturer"] = "Voltronic";
     dev["model"] = "Axpert Ultra";
+    dev["sw_version"] = FW_VERSION;
     char tmpl[48];
     snprintf(tmpl, sizeof(tmpl), "{{ value_json.%s }}", s.key);
     doc["value_template"] = tmpl;

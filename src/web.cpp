@@ -69,6 +69,7 @@ static void sendHeader(PGM_P title) {
       "td{padding:6px 0;border-bottom:1px solid #333}"
       "td:first-child{color:#aaa;width:55%}"
       ".ok{color:#6c6}.bad{color:#e66}"
+      "footer{padding:16px;max-width:640px;color:#777;font-size:13px;border-top:1px solid #333}"
       "</style></head><body><header>Voltronic MQTT</header><nav style='padding:8px 16px'>"
       "<a href=/>"));
   server.sendContent(TR("Status", "Статус"));
@@ -196,8 +197,10 @@ static void handleRoot() {
   server.sendContent(TR("Wi-Fi portal", "Wi-Fi портал"));
   server.sendContent(F("</a><a class=btn href=/restart>"));
   server.sendContent(TR("Restart", "Перезагрузка"));
-  server.sendContent(F("</a></p>"));
-  sendFooter();
+  server.sendContent(F("</a></p></main><footer>"));
+  server.sendContent(TR("Version", "Версия"));
+  server.sendContent(F(" " FW_VERSION "<br>Developed by eXUnity LAB &copy; 2026</footer></body></html>"));
+  server.sendContent("");
 }
 
 static void selectPin(const char *name, PGM_P label, uint8_t current) {

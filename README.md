@@ -1,5 +1,7 @@
 # esp8266-voltronic-mqtt
 
+**Developed by eXUnity LAB © 2026**
+
 ESP8266 (NodeMCU v3) firmware that polls a Voltronic / Axpert hybrid inverter over RS232 and publishes the data to MQTT with Home Assistant auto-discovery.
 
 The device replaces a PC with a USB-RS232 cable: it plugs into the inverter's RJ45 port and sends the data over Wi-Fi.
@@ -201,4 +203,4 @@ Bench testing with a PC: cheap CH340-based USB-RS232 adapters may not work corre
 
 ## License
 
-[MIT](LICENSE)
+Copyright © 2026 eXUnity LAB. Released under the [MIT](LICENSE) license.

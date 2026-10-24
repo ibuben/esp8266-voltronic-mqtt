@@ -1,6 +1,6 @@
 # esp8266-voltronic-mqtt
 
-**Developed by eXUnity LAB © 2026**
+**Разработано в eXUnity LAB © 2026**
 
 Прошивка для ESP8266 (NodeMCU v3), которая опрашивает гибридный инвертор Voltronic / Axpert по RS232 и публикует данные в MQTT с автообнаружением в Home Assistant.
 
